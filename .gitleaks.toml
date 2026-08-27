@@ -1,0 +1,7 @@
+title = "Nexus Git Security Rules"
+
+[[rules]]
+id = "nexus-secret"
+description = "Detects Nexus test secrets"
+regex = '''NEXUS_SECRET_[A-Za-z0-9_-]{20,}'''
+keywords = ["NEXUS_SECRET_"]
